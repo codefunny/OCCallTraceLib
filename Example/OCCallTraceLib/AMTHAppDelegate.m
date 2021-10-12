@@ -13,6 +13,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UIView *view = [[UIView alloc] init];
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        sleep(2);
+    });
     return YES;
 }
 

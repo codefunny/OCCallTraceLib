@@ -7,6 +7,7 @@
 //
 
 #import "AMTHViewController.h"
+#import "AAAAMTHCallTraceManager.h"
 
 @interface AMTHViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [[AAAAMTHCallTraceManager sharedObject] stopAndRecordWithPath:@"calltrace"];
 }
 
 - (void)didReceiveMemoryWarning

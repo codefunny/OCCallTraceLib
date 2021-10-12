@@ -1,0 +1,6 @@
+framework module OCCallTraceLib {
+  umbrella header "OCCallTraceLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

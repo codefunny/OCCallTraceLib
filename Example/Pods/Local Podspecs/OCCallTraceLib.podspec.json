@@ -1,0 +1,28 @@
+{
+  "name": "OCCallTraceLib",
+  "version": "0.1.0",
+  "summary": "A short description of OCCallTraceLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhengwenchao1/OCCallTraceLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhengwenchao1": "zhengwenchao1@huya.com"
+  },
+  "source": {
+    "git": "https://github.com/zhengwenchao1/OCCallTraceLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "OCCallTraceLib/Classes/**/*",
+  "public_header_files": "OCCallTraceLib/Classes/*.{h}",
+  "dependencies": {
+    "fishhook": [
+      "~> 0.2"
+    ]
+  }
+}

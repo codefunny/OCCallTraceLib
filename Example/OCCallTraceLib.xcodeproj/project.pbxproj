@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		755DEEC34EC1B41D5C9631F3 /* Pods_OCCallTraceLib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E090F5C9F209707E326C5ED2 /* Pods_OCCallTraceLib_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		E543B4162715C1EF00265601 /* AAAAMTHCallTraceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E543B4152715C1EF00265601 /* AAAAMTHCallTraceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,16 +58,18 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		662F1E9774F994B1C6C1CC00 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		6F33CA390D4534607DB54838 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		662F1E9774F994B1C6C1CC00 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6F33CA390D4534607DB54838 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		75E8CFB5687EA5E7046C9CDC /* OCCallTraceLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = OCCallTraceLib.podspec; path = ../OCCallTraceLib.podspec; sourceTree = "<group>"; };
+		75E8CFB5687EA5E7046C9CDC /* OCCallTraceLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OCCallTraceLib.podspec; path = ../OCCallTraceLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9999AF8382E968002209037C /* Pods_OCCallTraceLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCCallTraceLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CE66E49F4A454B74A949C9 /* Pods-OCCallTraceLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCallTraceLib_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OCCallTraceLib_Tests/Pods-OCCallTraceLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A83DE8BBFB8CBFE67929A978 /* Pods-OCCallTraceLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCallTraceLib_Tests.release.xcconfig"; path = "Target Support Files/Pods-OCCallTraceLib_Tests/Pods-OCCallTraceLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D6CBD9F024083CC27F76FB61 /* Pods-OCCallTraceLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCCallTraceLib_Example.release.xcconfig"; path = "Target Support Files/Pods-OCCallTraceLib_Example/Pods-OCCallTraceLib_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E090F5C9F209707E326C5ED2 /* Pods_OCCallTraceLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCCallTraceLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E543B4142715C1EF00265601 /* AAAAMTHCallTraceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAAAMTHCallTraceManager.h; sourceTree = "<group>"; };
+		E543B4152715C1EF00265601 /* AAAAMTHCallTraceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAAAMTHCallTraceManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* AMTHViewController.h */,
 				6003F5A6195388D20070C39A /* AMTHViewController.m */,
+				E543B4142715C1EF00265601 /* AAAAMTHCallTraceManager.h */,
+				E543B4152715C1EF00265601 /* AAAAMTHCallTraceManager.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -193,7 +198,6 @@
 				A7CE66E49F4A454B74A949C9 /* Pods-OCCallTraceLib_Tests.debug.xcconfig */,
 				A83DE8BBFB8CBFE67929A978 /* Pods-OCCallTraceLib_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +262,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -347,10 +352,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OCCallTraceLib_Example/Pods-OCCallTraceLib_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OCCallTraceLib/OCCallTraceLib.framework",
+				"${BUILT_PRODUCTS_DIR}/fishhook/fishhook.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCCallTraceLib.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fishhook.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -365,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* AMTHAppDelegate.m in Sources */,
+				E543B4162715C1EF00265601 /* AAAAMTHCallTraceManager.m in Sources */,
 				6003F5A7195388D20070C39A /* AMTHViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

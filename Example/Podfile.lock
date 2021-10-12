@@ -1,0 +1,23 @@
+PODS:
+  - fishhook (0.2)
+  - OCCallTraceLib (0.1.0):
+    - fishhook (~> 0.2)
+
+DEPENDENCIES:
+  - OCCallTraceLib (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - fishhook
+
+EXTERNAL SOURCES:
+  OCCallTraceLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  OCCallTraceLib: 33f3ef0243765ea7df51b1bbc7737ea21bbd5672
+
+PODFILE CHECKSUM: b904dfa52c0a99c5b0d06603f49783d331e4e525
+
+COCOAPODS: 1.9.1

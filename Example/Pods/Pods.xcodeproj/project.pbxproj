@@ -1,0 +1,999 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1108C0075E054270DB769E004D6809D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44AA07F84A44684514291D63502F37F /* Foundation.framework */; };
+		48FAD25263B2F547F38C9FF77868EEF1 /* AMTHCallTraceCore.h in Headers */ = {isa = PBXBuildFile; fileRef = A59EC934C2E2BF3D5BCD95365F07B41D /* AMTHCallTraceCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BCC65F1B927962E80A5135D961AB87D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44AA07F84A44684514291D63502F37F /* Foundation.framework */; };
+		6D537B737F048B774B4420FA57EBE561 /* fishhook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E9E82BF990AC45B55ABB288891DED1 /* fishhook-dummy.m */; };
+		80C833FF300A69EB31AA4B54A9625CE1 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = A082077E64DFEB7EAD5CAB7A7FFCADB5 /* fishhook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86B9016B16D9AB9BD1D15FCF87B8FE46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44AA07F84A44684514291D63502F37F /* Foundation.framework */; };
+		95A3F894CBB28030BE5851650E751ED8 /* fishhook-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FF4A365715FE2F4C2237D3565CB8DFF /* fishhook-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D6A6D29FDD09194E93A620042DC4402 /* Pods-OCCallTraceLib_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F085D81B41ACAF8F6EBB422B13533F /* Pods-OCCallTraceLib_Tests-dummy.m */; };
+		9FC32BA4147429091F2848E38F90F8C8 /* AMTHCallTraceCore.c in Sources */ = {isa = PBXBuildFile; fileRef = 160AEFD98FB982501DF12094DC95DC5E /* AMTHCallTraceCore.c */; };
+		A6C917C94DE645FEE2A8F165B001A1CB /* Pods-OCCallTraceLib_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C46BEF083D5BB173AA26000BF3DA06A1 /* Pods-OCCallTraceLib_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B391DF62724BA600D711BE1D39E3B530 /* OCCallTraceLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A9CB4121FA1E9A77AAB1B44397C68D /* OCCallTraceLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD12BA0FE2A91474574234E6F282D007 /* AMTHCallTraceTimeCostModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E35A202F590B3DCE52FC7BF910F99E /* AMTHCallTraceTimeCostModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7A88FC8CFF8A91E5BB45F08B7675ACB /* AMTHCallTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 07324A4050155D7D3CEAF530C8C1DCBC /* AMTHCallTrace.m */; };
+		E4FB76E9E88FACCA2329C1C60513B5E6 /* AMTHCallTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BCE64D6B6ABB379B5E734C1BCF93C35 /* AMTHCallTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7DCC0471F3CDAE80B2D2797014AF3FF /* Pods-OCCallTraceLib_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC412370961F3EBA8DF69A3D4923FD93 /* Pods-OCCallTraceLib_Example-dummy.m */; };
+		E8BA19A18FAFFBE8F8D313FE35D1B646 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44AA07F84A44684514291D63502F37F /* Foundation.framework */; };
+		E8BD062957518C17E31977E858ED8AB2 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = E9100DA5B871762662C00BFDE022145D /* fishhook.c */; };
+		EA036B72348CF46E9C3BCF78FAED592E /* Pods-OCCallTraceLib_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A320964C93027E395405FFEFF78BD0 /* Pods-OCCallTraceLib_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F701E3878C518D85843D6B48BCCF81A0 /* AMTHCallTraceTimeCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA6DCF2B198B2AE58C1C735CFF613CB /* AMTHCallTraceTimeCostModel.m */; };
+		F8336E2AE7289D24EABC0463516EB09F /* fishhook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF2B271DD6CFAB7E0956B2D2C96A79C /* fishhook.framework */; };
+		FD08A12137DF88B9256326C16F794AC4 /* OCCallTraceLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C564E3B374702BAC3B90D7F666AEF8E3 /* OCCallTraceLib-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17E17C15D8BE19952DEAE4FDDF67AF4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F28108793F4D83054A3BB91969B2F20;
+			remoteInfo = "Pods-OCCallTraceLib_Example";
+		};
+		5D91BC4C48920E16F9C90AF3C0B24420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58CAF5B0291DAB42086F0645150E1791;
+			remoteInfo = fishhook;
+		};
+		9858CC2626E3D64A2CB4F3910F79C6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B245F35D72B7FEE1612563A888ABAB8;
+			remoteInfo = OCCallTraceLib;
+		};
+		FEA41E98BDDEAA1EC55F048A0AF9C1A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58CAF5B0291DAB42086F0645150E1791;
+			remoteInfo = fishhook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07324A4050155D7D3CEAF530C8C1DCBC /* AMTHCallTrace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMTHCallTrace.m; path = OCCallTraceLib/Classes/AMTHCallTrace.m; sourceTree = "<group>"; };
+		07BC34A11F1AF109EDE020EAEA0DE4B7 /* Pods-OCCallTraceLib_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCCallTraceLib_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0FA6DCF2B198B2AE58C1C735CFF613CB /* AMTHCallTraceTimeCostModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AMTHCallTraceTimeCostModel.m; path = OCCallTraceLib/Classes/AMTHCallTraceTimeCostModel.m; sourceTree = "<group>"; };
+		160AEFD98FB982501DF12094DC95DC5E /* AMTHCallTraceCore.c */ = {isa = PBXFileReference; includeInIndex = 1; name = AMTHCallTraceCore.c; path = OCCallTraceLib/Classes/AMTHCallTraceCore.c; sourceTree = "<group>"; };
+		161C688BE34D9048E73E301EC2CAADD3 /* Pods-OCCallTraceLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCCallTraceLib_Example.release.xcconfig"; sourceTree = "<group>"; };
+		17392DB88A86A84B1FA1D33DACC63C04 /* OCCallTraceLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OCCallTraceLib-Info.plist"; sourceTree = "<group>"; };
+		1BCE64D6B6ABB379B5E734C1BCF93C35 /* AMTHCallTrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMTHCallTrace.h; path = OCCallTraceLib/Classes/AMTHCallTrace.h; sourceTree = "<group>"; };
+		355717E801E3CE5FC6EFD9215B30A74B /* Pods-OCCallTraceLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCCallTraceLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3FF4A365715FE2F4C2237D3565CB8DFF /* fishhook-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fishhook-umbrella.h"; sourceTree = "<group>"; };
+		40F085D81B41ACAF8F6EBB422B13533F /* Pods-OCCallTraceLib_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCCallTraceLib_Tests-dummy.m"; sourceTree = "<group>"; };
+		44A320964C93027E395405FFEFF78BD0 /* Pods-OCCallTraceLib_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCCallTraceLib_Tests-umbrella.h"; sourceTree = "<group>"; };
+		50A9CB4121FA1E9A77AAB1B44397C68D /* OCCallTraceLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCCallTraceLib-umbrella.h"; sourceTree = "<group>"; };
+		5E8485FD6DFD2BC2521E418BAD7B2421 /* Pods_OCCallTraceLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OCCallTraceLib_Example.framework; path = "Pods-OCCallTraceLib_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E35A202F590B3DCE52FC7BF910F99E /* AMTHCallTraceTimeCostModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMTHCallTraceTimeCostModel.h; path = OCCallTraceLib/Classes/AMTHCallTraceTimeCostModel.h; sourceTree = "<group>"; };
+		6AE72BA35A0EF25D5EB9121CA9567C59 /* Pods-OCCallTraceLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCCallTraceLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6B5ADDE333B6659C4A2256F333EBB878 /* Pods_OCCallTraceLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OCCallTraceLib_Tests.framework; path = "Pods-OCCallTraceLib_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E2816470ECB012ED14CA6367D2A2119 /* OCCallTraceLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OCCallTraceLib.debug.xcconfig; sourceTree = "<group>"; };
+		7611CA10D069C3204EEB656EC22F6B2A /* Pods-OCCallTraceLib_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCCallTraceLib_Tests-Info.plist"; sourceTree = "<group>"; };
+		78512C80572AA2D3393F79CBDE51C210 /* OCCallTraceLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = OCCallTraceLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7B1764F9C9F1652B30795BD59A37FBA2 /* Pods-OCCallTraceLib_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCCallTraceLib_Example.modulemap"; sourceTree = "<group>"; };
+		82874F20FC75A395C15A3EB3CEB5526C /* OCCallTraceLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OCCallTraceLib.modulemap; sourceTree = "<group>"; };
+		87E9E82BF990AC45B55ABB288891DED1 /* fishhook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "fishhook-dummy.m"; sourceTree = "<group>"; };
+		880EC031071080F9926C22F905A174A5 /* Pods-OCCallTraceLib_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCCallTraceLib_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8A8E59C58E73864695C28A125BC30586 /* Pods-OCCallTraceLib_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCCallTraceLib_Example-Info.plist"; sourceTree = "<group>"; };
+		8C87411DB097E3A33E94395A8D8E1055 /* fishhook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fishhook.release.xcconfig; sourceTree = "<group>"; };
+		91310E58B4BAFE40628867A59E02CC78 /* Pods-OCCallTraceLib_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCCallTraceLib_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		927DF7702A33CF68C2EC9AF6AD828E96 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9CA216629A7529B075F3AC826470B254 /* fishhook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = fishhook.framework; path = fishhook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DA1E7B358D5630BAB48BCB2B8D59E57 /* Pods-OCCallTraceLib_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCCallTraceLib_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A082077E64DFEB7EAD5CAB7A7FFCADB5 /* fishhook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		A59EC934C2E2BF3D5BCD95365F07B41D /* AMTHCallTraceCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMTHCallTraceCore.h; path = OCCallTraceLib/Classes/AMTHCallTraceCore.h; sourceTree = "<group>"; };
+		A93630FAF01540CF9B8C1763EF06403A /* OCCallTraceLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OCCallTraceLib.release.xcconfig; sourceTree = "<group>"; };
+		BEF2B271DD6CFAB7E0956B2D2C96A79C /* fishhook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = fishhook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C151D068829F3AD1A8CC33DB2EF68EBE /* fishhook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fishhook.debug.xcconfig; sourceTree = "<group>"; };
+		C2B8E4C08918CC3370E21D604C3954E0 /* Pods-OCCallTraceLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCCallTraceLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C46BEF083D5BB173AA26000BF3DA06A1 /* Pods-OCCallTraceLib_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCCallTraceLib_Example-umbrella.h"; sourceTree = "<group>"; };
+		C564E3B374702BAC3B90D7F666AEF8E3 /* OCCallTraceLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCCallTraceLib-dummy.m"; sourceTree = "<group>"; };
+		CC412370961F3EBA8DF69A3D4923FD93 /* Pods-OCCallTraceLib_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCCallTraceLib_Example-dummy.m"; sourceTree = "<group>"; };
+		D1B87A0CD5D8AE058C9B16F81CAAB761 /* OCCallTraceLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OCCallTraceLib.framework; path = OCCallTraceLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44AA07F84A44684514291D63502F37F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D80397648A589B46B68A74758B7F63DB /* fishhook-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "fishhook-Info.plist"; sourceTree = "<group>"; };
+		D85CBCE40D4AD3D316AFC99DA0D1A4E3 /* Pods-OCCallTraceLib_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCCallTraceLib_Tests.modulemap"; sourceTree = "<group>"; };
+		DBD77607D3663EA985A0904DFE506F7A /* Pods-OCCallTraceLib_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCCallTraceLib_Example-frameworks.sh"; sourceTree = "<group>"; };
+		DBDAFF43C6A46119801F796E2F69E9ED /* OCCallTraceLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCCallTraceLib-prefix.pch"; sourceTree = "<group>"; };
+		DC9BE1194C1A117E312792F0CCF2B055 /* fishhook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = fishhook.modulemap; sourceTree = "<group>"; };
+		E5E652C1B47A1EC09E42194B4E85A695 /* fishhook-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fishhook-prefix.pch"; sourceTree = "<group>"; };
+		E9100DA5B871762662C00BFDE022145D /* fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fishhook.c; sourceTree = "<group>"; };
+		FBFA0C8E4D080697425B7F26C020BF63 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		205E5041F77A3B11FD220920BBFE7282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BCC65F1B927962E80A5135D961AB87D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8591CFFA026AD180B8C4E91B12295E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8336E2AE7289D24EABC0463516EB09F /* fishhook.framework in Frameworks */,
+				86B9016B16D9AB9BD1D15FCF87B8FE46 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FFCDC9755AC53661EEE3B4A324B7ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1108C0075E054270DB769E004D6809D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32A830BD36CDBA1D290EBB4DC987894 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BA19A18FAFFBE8F8D313FE35D1B646 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		156E05FCAA9A7BD68C38B03A1478F8A5 /* OCCallTraceLib */ = {
+			isa = PBXGroup;
+			children = (
+				1BCE64D6B6ABB379B5E734C1BCF93C35 /* AMTHCallTrace.h */,
+				07324A4050155D7D3CEAF530C8C1DCBC /* AMTHCallTrace.m */,
+				160AEFD98FB982501DF12094DC95DC5E /* AMTHCallTraceCore.c */,
+				A59EC934C2E2BF3D5BCD95365F07B41D /* AMTHCallTraceCore.h */,
+				61E35A202F590B3DCE52FC7BF910F99E /* AMTHCallTraceTimeCostModel.h */,
+				0FA6DCF2B198B2AE58C1C735CFF613CB /* AMTHCallTraceTimeCostModel.m */,
+				AE6BCEA6253F4F844870001CC63EE21A /* Pod */,
+				95E25942F394C6B3E09E120E4CB8F86F /* Support Files */,
+			);
+			name = OCCallTraceLib;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		219D5CE4FC0B3D6463D10A643BCEFAE7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				81D65A8D0D37E7D3ABFFB1A9F7E4B49F /* Pods-OCCallTraceLib_Example */,
+				9E7021469FB2E5832579D98F5DBE249D /* Pods-OCCallTraceLib_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2DCD3E679CA9C0693E674C0A4A6A8F87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0AA1A85F67FAA72184FF8F0B3931B92 /* fishhook */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		31BCDB218159091F98F005BEA0831AF7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				156E05FCAA9A7BD68C38B03A1478F8A5 /* OCCallTraceLib */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		49684BF2BBADFDE6C8411D88879E913D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEF2B271DD6CFAB7E0956B2D2C96A79C /* fishhook.framework */,
+				D267380211CE3D7D5CB5089160EAB9C8 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E8091A0F0DD4065E9371F7109F966B8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC9BE1194C1A117E312792F0CCF2B055 /* fishhook.modulemap */,
+				87E9E82BF990AC45B55ABB288891DED1 /* fishhook-dummy.m */,
+				D80397648A589B46B68A74758B7F63DB /* fishhook-Info.plist */,
+				E5E652C1B47A1EC09E42194B4E85A695 /* fishhook-prefix.pch */,
+				3FF4A365715FE2F4C2237D3565CB8DFF /* fishhook-umbrella.h */,
+				C151D068829F3AD1A8CC33DB2EF68EBE /* fishhook.debug.xcconfig */,
+				8C87411DB097E3A33E94395A8D8E1055 /* fishhook.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/fishhook";
+			sourceTree = "<group>";
+		};
+		81D65A8D0D37E7D3ABFFB1A9F7E4B49F /* Pods-OCCallTraceLib_Example */ = {
+			isa = PBXGroup;
+			children = (
+				7B1764F9C9F1652B30795BD59A37FBA2 /* Pods-OCCallTraceLib_Example.modulemap */,
+				91310E58B4BAFE40628867A59E02CC78 /* Pods-OCCallTraceLib_Example-acknowledgements.markdown */,
+				880EC031071080F9926C22F905A174A5 /* Pods-OCCallTraceLib_Example-acknowledgements.plist */,
+				CC412370961F3EBA8DF69A3D4923FD93 /* Pods-OCCallTraceLib_Example-dummy.m */,
+				DBD77607D3663EA985A0904DFE506F7A /* Pods-OCCallTraceLib_Example-frameworks.sh */,
+				8A8E59C58E73864695C28A125BC30586 /* Pods-OCCallTraceLib_Example-Info.plist */,
+				C46BEF083D5BB173AA26000BF3DA06A1 /* Pods-OCCallTraceLib_Example-umbrella.h */,
+				6AE72BA35A0EF25D5EB9121CA9567C59 /* Pods-OCCallTraceLib_Example.debug.xcconfig */,
+				161C688BE34D9048E73E301EC2CAADD3 /* Pods-OCCallTraceLib_Example.release.xcconfig */,
+			);
+			name = "Pods-OCCallTraceLib_Example";
+			path = "Target Support Files/Pods-OCCallTraceLib_Example";
+			sourceTree = "<group>";
+		};
+		95E25942F394C6B3E09E120E4CB8F86F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				82874F20FC75A395C15A3EB3CEB5526C /* OCCallTraceLib.modulemap */,
+				C564E3B374702BAC3B90D7F666AEF8E3 /* OCCallTraceLib-dummy.m */,
+				17392DB88A86A84B1FA1D33DACC63C04 /* OCCallTraceLib-Info.plist */,
+				DBDAFF43C6A46119801F796E2F69E9ED /* OCCallTraceLib-prefix.pch */,
+				50A9CB4121FA1E9A77AAB1B44397C68D /* OCCallTraceLib-umbrella.h */,
+				6E2816470ECB012ED14CA6367D2A2119 /* OCCallTraceLib.debug.xcconfig */,
+				A93630FAF01540CF9B8C1763EF06403A /* OCCallTraceLib.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/OCCallTraceLib";
+			sourceTree = "<group>";
+		};
+		9E7021469FB2E5832579D98F5DBE249D /* Pods-OCCallTraceLib_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D85CBCE40D4AD3D316AFC99DA0D1A4E3 /* Pods-OCCallTraceLib_Tests.modulemap */,
+				07BC34A11F1AF109EDE020EAEA0DE4B7 /* Pods-OCCallTraceLib_Tests-acknowledgements.markdown */,
+				9DA1E7B358D5630BAB48BCB2B8D59E57 /* Pods-OCCallTraceLib_Tests-acknowledgements.plist */,
+				40F085D81B41ACAF8F6EBB422B13533F /* Pods-OCCallTraceLib_Tests-dummy.m */,
+				7611CA10D069C3204EEB656EC22F6B2A /* Pods-OCCallTraceLib_Tests-Info.plist */,
+				44A320964C93027E395405FFEFF78BD0 /* Pods-OCCallTraceLib_Tests-umbrella.h */,
+				C2B8E4C08918CC3370E21D604C3954E0 /* Pods-OCCallTraceLib_Tests.debug.xcconfig */,
+				355717E801E3CE5FC6EFD9215B30A74B /* Pods-OCCallTraceLib_Tests.release.xcconfig */,
+			);
+			name = "Pods-OCCallTraceLib_Tests";
+			path = "Target Support Files/Pods-OCCallTraceLib_Tests";
+			sourceTree = "<group>";
+		};
+		AE6BCEA6253F4F844870001CC63EE21A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FBFA0C8E4D080697425B7F26C020BF63 /* LICENSE */,
+				78512C80572AA2D3393F79CBDE51C210 /* OCCallTraceLib.podspec */,
+				927DF7702A33CF68C2EC9AF6AD828E96 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B0AA1A85F67FAA72184FF8F0B3931B92 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				E9100DA5B871762662C00BFDE022145D /* fishhook.c */,
+				A082077E64DFEB7EAD5CAB7A7FFCADB5 /* fishhook.h */,
+				6E8091A0F0DD4065E9371F7109F966B8 /* Support Files */,
+			);
+			name = fishhook;
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				31BCDB218159091F98F005BEA0831AF7 /* Development Pods */,
+				49684BF2BBADFDE6C8411D88879E913D /* Frameworks */,
+				2DCD3E679CA9C0693E674C0A4A6A8F87 /* Pods */,
+				FAE765156249B1C4A103AA03AE9AC932 /* Products */,
+				219D5CE4FC0B3D6463D10A643BCEFAE7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D267380211CE3D7D5CB5089160EAB9C8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D44AA07F84A44684514291D63502F37F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FAE765156249B1C4A103AA03AE9AC932 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CA216629A7529B075F3AC826470B254 /* fishhook.framework */,
+				D1B87A0CD5D8AE058C9B16F81CAAB761 /* OCCallTraceLib.framework */,
+				5E8485FD6DFD2BC2521E418BAD7B2421 /* Pods_OCCallTraceLib_Example.framework */,
+				6B5ADDE333B6659C4A2256F333EBB878 /* Pods_OCCallTraceLib_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		096B60301A19DFD3D18F9E2660BFF452 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4FB76E9E88FACCA2329C1C60513B5E6 /* AMTHCallTrace.h in Headers */,
+				48FAD25263B2F547F38C9FF77868EEF1 /* AMTHCallTraceCore.h in Headers */,
+				BD12BA0FE2A91474574234E6F282D007 /* AMTHCallTraceTimeCostModel.h in Headers */,
+				B391DF62724BA600D711BE1D39E3B530 /* OCCallTraceLib-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35BF0420D791027C1D7AEAB3B577B593 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C917C94DE645FEE2A8F165B001A1CB /* Pods-OCCallTraceLib_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF30AFFE4A785B493F534BD823BD883 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95A3F894CBB28030BE5851650E751ED8 /* fishhook-umbrella.h in Headers */,
+				80C833FF300A69EB31AA4B54A9625CE1 /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C60D0D5817EFD5464E2C88A8A29FE5DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA036B72348CF46E9C3BCF78FAED592E /* Pods-OCCallTraceLib_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F28108793F4D83054A3BB91969B2F20 /* Pods-OCCallTraceLib_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FE8D9AADC9C1B4ABD4F34CB7CF65202 /* Build configuration list for PBXNativeTarget "Pods-OCCallTraceLib_Example" */;
+			buildPhases = (
+				35BF0420D791027C1D7AEAB3B577B593 /* Headers */,
+				FBE976B2852846E7B89879DCA98B8069 /* Sources */,
+				205E5041F77A3B11FD220920BBFE7282 /* Frameworks */,
+				F2C25BBA59305F9D8C760566A185C6C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE5E695C5005F39A8E899AB587A2C563 /* PBXTargetDependency */,
+				090CFE373C46B2545689E4664F5BEA87 /* PBXTargetDependency */,
+			);
+			name = "Pods-OCCallTraceLib_Example";
+			productName = "Pods-OCCallTraceLib_Example";
+			productReference = 5E8485FD6DFD2BC2521E418BAD7B2421 /* Pods_OCCallTraceLib_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1FC4373EAD3CEB5A45C92674CC8D7621 /* Pods-OCCallTraceLib_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1291E7A658E403C1249F4C61A2DEEC5 /* Build configuration list for PBXNativeTarget "Pods-OCCallTraceLib_Tests" */;
+			buildPhases = (
+				C60D0D5817EFD5464E2C88A8A29FE5DB /* Headers */,
+				7748690CA69AAA1EFBA8C3A9A5D3ECBA /* Sources */,
+				F32A830BD36CDBA1D290EBB4DC987894 /* Frameworks */,
+				E92B9B7392A91449432151C6E6FF72A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8C49A19007DF02B8EBE2F65CE1278AC /* PBXTargetDependency */,
+			);
+			name = "Pods-OCCallTraceLib_Tests";
+			productName = "Pods-OCCallTraceLib_Tests";
+			productReference = 6B5ADDE333B6659C4A2256F333EBB878 /* Pods_OCCallTraceLib_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B245F35D72B7FEE1612563A888ABAB8 /* OCCallTraceLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2015A33AF2D77D42C54D674AE47C589 /* Build configuration list for PBXNativeTarget "OCCallTraceLib" */;
+			buildPhases = (
+				096B60301A19DFD3D18F9E2660BFF452 /* Headers */,
+				F0BC1481DF542653A2E8A23F50B0DDBB /* Sources */,
+				8591CFFA026AD180B8C4E91B12295E1C /* Frameworks */,
+				D3AC57D8C678EBFAB2943E4BAB19F599 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C049BBAC2D04373E2610B321ED196E0 /* PBXTargetDependency */,
+			);
+			name = OCCallTraceLib;
+			productName = OCCallTraceLib;
+			productReference = D1B87A0CD5D8AE058C9B16F81CAAB761 /* OCCallTraceLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		58CAF5B0291DAB42086F0645150E1791 /* fishhook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91504DF7176D1F4A06DBA743CB1B51D5 /* Build configuration list for PBXNativeTarget "fishhook" */;
+			buildPhases = (
+				3FF30AFFE4A785B493F534BD823BD883 /* Headers */,
+				89BAE68092118C344952CF42DAEB6988 /* Sources */,
+				99FFCDC9755AC53661EEE3B4A324B7ED /* Frameworks */,
+				0FC55C601FB502219B0F9F265333EE32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fishhook;
+			productName = fishhook;
+			productReference = 9CA216629A7529B075F3AC826470B254 /* fishhook.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FAE765156249B1C4A103AA03AE9AC932 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58CAF5B0291DAB42086F0645150E1791 /* fishhook */,
+				4B245F35D72B7FEE1612563A888ABAB8 /* OCCallTraceLib */,
+				1F28108793F4D83054A3BB91969B2F20 /* Pods-OCCallTraceLib_Example */,
+				1FC4373EAD3CEB5A45C92674CC8D7621 /* Pods-OCCallTraceLib_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FC55C601FB502219B0F9F265333EE32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3AC57D8C678EBFAB2943E4BAB19F599 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92B9B7392A91449432151C6E6FF72A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2C25BBA59305F9D8C760566A185C6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7748690CA69AAA1EFBA8C3A9A5D3ECBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6A6D29FDD09194E93A620042DC4402 /* Pods-OCCallTraceLib_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BAE68092118C344952CF42DAEB6988 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D537B737F048B774B4420FA57EBE561 /* fishhook-dummy.m in Sources */,
+				E8BD062957518C17E31977E858ED8AB2 /* fishhook.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0BC1481DF542653A2E8A23F50B0DDBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A88FC8CFF8A91E5BB45F08B7675ACB /* AMTHCallTrace.m in Sources */,
+				9FC32BA4147429091F2848E38F90F8C8 /* AMTHCallTraceCore.c in Sources */,
+				F701E3878C518D85843D6B48BCCF81A0 /* AMTHCallTraceTimeCostModel.m in Sources */,
+				FD08A12137DF88B9256326C16F794AC4 /* OCCallTraceLib-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE976B2852846E7B89879DCA98B8069 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7DCC0471F3CDAE80B2D2797014AF3FF /* Pods-OCCallTraceLib_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		090CFE373C46B2545689E4664F5BEA87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fishhook;
+			target = 58CAF5B0291DAB42086F0645150E1791 /* fishhook */;
+			targetProxy = FEA41E98BDDEAA1EC55F048A0AF9C1A3 /* PBXContainerItemProxy */;
+		};
+		5C049BBAC2D04373E2610B321ED196E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fishhook;
+			target = 58CAF5B0291DAB42086F0645150E1791 /* fishhook */;
+			targetProxy = 5D91BC4C48920E16F9C90AF3C0B24420 /* PBXContainerItemProxy */;
+		};
+		A8C49A19007DF02B8EBE2F65CE1278AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-OCCallTraceLib_Example";
+			target = 1F28108793F4D83054A3BB91969B2F20 /* Pods-OCCallTraceLib_Example */;
+			targetProxy = 17E17C15D8BE19952DEAE4FDDF67AF4D /* PBXContainerItemProxy */;
+		};
+		BE5E695C5005F39A8E899AB587A2C563 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OCCallTraceLib;
+			target = 4B245F35D72B7FEE1612563A888ABAB8 /* OCCallTraceLib */;
+			targetProxy = 9858CC2626E3D64A2CB4F3910F79C6CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		41783C370D00CD99C6E454061F272B16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C151D068829F3AD1A8CC33DB2EF68EBE /* fishhook.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/fishhook/fishhook-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/fishhook/fishhook-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/fishhook/fishhook.modulemap";
+				PRODUCT_MODULE_NAME = fishhook;
+				PRODUCT_NAME = fishhook;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		45C3977F7EE62BCB82560CC2AE2EFF96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2B8E4C08918CC3370E21D604C3954E0 /* Pods-OCCallTraceLib_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OCCallTraceLib_Tests/Pods-OCCallTraceLib_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OCCallTraceLib_Tests/Pods-OCCallTraceLib_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47F500FC3F2895A2302F00D871B43C61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E2816470ECB012ED14CA6367D2A2119 /* OCCallTraceLib.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OCCallTraceLib/OCCallTraceLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OCCallTraceLib/OCCallTraceLib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OCCallTraceLib/OCCallTraceLib.modulemap";
+				PRODUCT_MODULE_NAME = OCCallTraceLib;
+				PRODUCT_NAME = OCCallTraceLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4B79731D530A74982D5B359E507C5DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93630FAF01540CF9B8C1763EF06403A /* OCCallTraceLib.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OCCallTraceLib/OCCallTraceLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OCCallTraceLib/OCCallTraceLib-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OCCallTraceLib/OCCallTraceLib.modulemap";
+				PRODUCT_MODULE_NAME = OCCallTraceLib;
+				PRODUCT_NAME = OCCallTraceLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		94394914A0042A087274C26459C2E609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 161C688BE34D9048E73E301EC2CAADD3 /* Pods-OCCallTraceLib_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OCCallTraceLib_Example/Pods-OCCallTraceLib_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OCCallTraceLib_Example/Pods-OCCallTraceLib_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3A21E78512407FB90434547C5987410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AE72BA35A0EF25D5EB9121CA9567C59 /* Pods-OCCallTraceLib_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OCCallTraceLib_Example/Pods-OCCallTraceLib_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OCCallTraceLib_Example/Pods-OCCallTraceLib_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DA88E40329B8DED83A634951ACB49732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C87411DB097E3A33E94395A8D8E1055 /* fishhook.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/fishhook/fishhook-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/fishhook/fishhook-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/fishhook/fishhook.modulemap";
+				PRODUCT_MODULE_NAME = fishhook;
+				PRODUCT_NAME = fishhook;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9BC543EAFB342513602239889C2AA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 355717E801E3CE5FC6EFD9215B30A74B /* Pods-OCCallTraceLib_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OCCallTraceLib_Tests/Pods-OCCallTraceLib_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OCCallTraceLib_Tests/Pods-OCCallTraceLib_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91504DF7176D1F4A06DBA743CB1B51D5 /* Build configuration list for PBXNativeTarget "fishhook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41783C370D00CD99C6E454061F272B16 /* Debug */,
+				DA88E40329B8DED83A634951ACB49732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FE8D9AADC9C1B4ABD4F34CB7CF65202 /* Build configuration list for PBXNativeTarget "Pods-OCCallTraceLib_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A21E78512407FB90434547C5987410 /* Debug */,
+				94394914A0042A087274C26459C2E609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1291E7A658E403C1249F4C61A2DEEC5 /* Build configuration list for PBXNativeTarget "Pods-OCCallTraceLib_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45C3977F7EE62BCB82560CC2AE2EFF96 /* Debug */,
+				F9BC543EAFB342513602239889C2AA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2015A33AF2D77D42C54D674AE47C589 /* Build configuration list for PBXNativeTarget "OCCallTraceLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47F500FC3F2895A2302F00D871B43C61 /* Debug */,
+				4B79731D530A74982D5B359E507C5DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
